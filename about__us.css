@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Solid:wght@100;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    background-color: #EDECE6;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: #121618;
+    background-size: cover;
+    color: #f45f1f;
+    width: 100%;
+    height: 80px;
+    padding: 20px 40px;
+    z-index: 1000;
+    top: -1px;
+    right: 0px;
+    left: 20px;
+}
+
+.navbar-brand {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navbar-brand img {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    top: 4px;
+    left: 80px;
+
+}
+
+.navbar-nav a.nav-link {
+    position: relative;
+    float: center;
+    margin-right: 6px;
+    /* for the spacing of the links*/
+    margin-top: 0px;
+    text-decoration: none;
+    color: white;
+    /* Link color, change as needed */
+    transition: color 0.3s;
+    text-transform: capitalize;
+    font-size: 16.5px;
+    font-weight: 400;
+
+}
+
+.nav-btn a.btn-outline-success {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-color: transparent;
+    background-color: #F0902B;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.nav-btn a.btn-outline-success:hover {
+    background-color: #26904A;
+}
+
+.cart-btn a.fa-shopping-cart {
+    position: absolute;
+    margin-top: 1px;
+    color: white;
+    background-color: #F0902B;
+    padding: 10px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cart-btn a.fa-shopping-cart:hover {
+    background-color: #26904A;
+
+}
+
+.navbar-nav a.nav-link:hover {
+    color: #26904A;
+    /* Link color on hover, change as needed */
+}
+
+.navbar-nav a.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3.5px;
+    /* Underline thickness, adjust as needed */
+    bottom: 0;
+    left: 0;
+    background-color: #E36422;
+    /* Underline color, change as needed */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.about {
+    min-height: 110vw;
+    background-color: #EDECE6;
+}
+
+.about .container {
+    width: 100%;
+}
+
+.about .row {
+    width: 100%;
+    margin-top: 0%;
+}
+
+.about img {
+    margin-left: -3vw;
+    width: 100%;
+    height: auto;
+}
+
+/* 2nd image in the page */
+.about #about2 {
+    margin-top: 100px;
+    margin-left: 6vw;
+    width: 100%;
+    height: auto;
+}
+
+.about .heading h2 {
+    margin-top: 100px;
+    font-family: 'Bebas Neue', sans-serif;;
+    font-size: 45px;
+    color: #241b15;;
+    font-weight: bold;
+}
+
+.col1{
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about .heading2 h2 {
+    margin-top: 180px;
+    font-family: 'Bebas Neue', sans-serif;;
+    font-size: 45px;
+    color: #241b15;;
+    font-weight: bold;
+}
+
+.col2{
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about .services h2 {
+    margin-top: 70px;
+    font-family: 'Bebas Neue', sans-serif;;
+    font-size: 45px;
+    color: #241b15;;
+    font-weight: bold;
+}
+
+.navbar-nav a.nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.footer {
+    background-color: #121618;
+    color: white;
+    padding: 15px 0;
+    background-size: cover;
+}
+
+.social-icons a {
+    float: right;
+    margin-right: 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.social-icons a:hover{
+    color: seagreen;
+}
+
+/* .social-icons #map{
+    float: right;
+    margin-right: 15px;
+    color: white;
+    font-size: 35px;
+}
+
+.social-icons #map:hover{
+    color: seagreen;
+} */
+ 
+/* Responsive styles for footer */
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+
+    .social-icons a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
