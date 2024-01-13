@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home / Binasal</title>
+  <link rel="icon" type="image/x-icon" href="images/logo-icon.png" href="{% static 'favicon.png' %}" />
+
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow py-3 sticky-top transparent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><img src="images/logo2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">menu</a></li>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="home" id="home">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="bg1">
+          <div class="carousel-item text-center active slide-1">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-50">
+                  <a href="#"><img src="images/slide1.png" alt="slide-1"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg2">
+          <div class="carousel-item text-center slide-2">
+            <div class="container h-80 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-50">
+                  <img src="images/slide2.png" alt="slide-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg3">
+          <div class="carousel-item text-center slide-3">
+            <div class="container h-80 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-50">
+                  <a href="menu.html?tab-menu=Pasalubong"><img src="images/slide3.png" alt="slide-1"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg4">
+          <div class="carousel-item text-center slide-4">
+            <div class="container h-80 d-flex align-items-center justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-50">
+                  <a href=menu2.html#PSC><img src="images/slide4.png" alt="slide-1"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="special">
+    <div class="heading">
+      <h1>Today's Special</h1>
+    </div>
+
+    <div class="content-area">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img class="biryani" src="images/9.png" alt="">
+                <h1>Biryani</h1>
+                <h4> Garam masala, cardamon, cinnamon, bay leaves, tomato, yogurt, onion, chili, basmati rice</h4>
+                <h5 class="price">₱180.00 <a href="order__form.html" class="btn"  target="_blank">ORDER</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img class="kilawin" src="images/KILAWIN.jpg" alt="">
+                <h1>Kilawin</h1>
+                <h4> Grilled pork ear, vinegar, onion, chili, ginger </h4>
+                <h5 class="price">₱149.00 <a href="#" class="btn" target="_blank">ORDER</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img class="kare-kare" src="images/KARE KARE.jpg" alt="">
+                <h1>Kare-Kare</h1>
+                <h4> Beef tail, tiwalya, anato, peanut butter, long beans, eggplant, petchay, banana buds, blossoms
+                </h4>
+                <h5 class="price">₱149.00 <a href="#" class="btn">ORDER</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img class="sm" src="images/SEAFOOD MIX.jpg" alt="">
+                <h1>Seafood Mix</h1>
+                <h4>2-3 different seashells, squids, crabs, corn, oyster sauce, chili, bell pepper herbs and spices
+                </h4>
+                <h5 class="price">300.00 <a href="#" class="btn"  target="_blank">ORDER</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img class="sm" src="images/SINANTOLAN.jpg" alt="">
+                <h1>Sinantolan</h1>
+                <h4> Cotton fruits or santol, coconut milk, Dinailan, Shrimp Paste, chili, lechon kawali or bagnet </h4>
+                <h5 class="price">₱130.00 <a href="#" class="btn"  target="_blank">ORDER</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <img class="sinantolan2" src="images/SINANTOLAN WITH LECHON KAWALI.jpg" alt="">
+                <h1 class="santol">Sinantolan with Lechon Kawali</h1>
+                <h4> Cotton fruits or santol, coconut milk, Dinailan, Shrimp Paste, chili, lechon kawali or bagnet </h4>
+                <h5 class="price">₱160.00 <a href="#" class="btn"  target="_blank">ORDER</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="footerid">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12 mx-auto">
+          <a href="about__us.html" class="btn"> About Us</a>
+          <p class="ab">Don't miss out our promos online!</p>
+          <hr class="w-25 mx-auto text-dark">
+          <a href="https://www.facebook.com/Binasal2022" target="blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="blank"><i class="fab fa-tiktok"></i></a>
+          <a href="Binasal2022@gmail.com" target="blank"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 mx-auto">
+          <h3>Contact Us</h3>
+          <p>binasal2022@gmail.com</p>
+          <hr class="w-25 mx-auto text-dark">
+          <p>Hours: Opens at 11 AM to 10 PM <br>
+            Tuesday to Sunday <br>
+            Phone: 0915 035 7459</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 mx-auto">
+          <h3>Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6583577795345!2d121.0597135687424!3d14.56151924349174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c86119cdd063%3A0x378d71497456de3d!2s72%2C%203%20A.%20Bonifacio%20Ave%2C%20Manila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1702367780042!5m2!1sen!2sph"
+            height="200" style="border:0;" allowfullscreen="" loading="lazy" class="container-fluid"></iframe>
+         
+        </div>
+      </div>
+    </div>
+    <hr class="w-50 mt-5 mx-auto text-dark">
+    <div class="container last-footer">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-12 mx-auto Copyright">
+          <h4>© 2024 Binasal. All Rights Reserved.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      loop: true,
+      nav: true,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        960: {
+          items: 3
+        },
+        1200: {
+          items: 2
+        }
+      }
+    });
+    owl.on('mousewheel', '.owl-stage', function (e) {
+      if (e.deltaY > 0) {
+        owl.trigger('next.owl');
+      } else {
+        owl.trigger('prev.owl');
+      }
+      e.preventDefault();
+    }); 
+  </script>
+
+</body>
+
+</html>
