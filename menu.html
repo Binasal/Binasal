@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu / Binasal</title>
+  <link rel="icon" type="image/x-icon" href="images/logo-icon.png" href="{% static 'favicon.png' %}"/>
+
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow py-3 sticky-top transparent-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="home.html"><img src="images/logo2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">menu</a></li>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- This section is for the container of menu -->
+ <section class="main-container" id="menu-container">
+    <div class="tab-nav-bar">
+      <div class="tab-navigation">
+        <i class="uil uil-angle-left left-btn"></i> 
+        <i class="uil uil-angle-right right-btn"></i>
+       
+        <ul class="tab-menu">
+          <li class="tab-btn" onclick="openPage(event, 'Menu')" id="defaultOpen">Menu</li>
+          <li class="tab-btn" onclick="openPage(event, 'Inasal')" id="defaultOpen">Inasal Ala Bacolod</li>
+          <li class="tab-btn" onclick="openPage(event, 'Binalot')">Binalot</li>
+          <li class="tab-btn" onclick="openPage(event, 'Ricebowl')">Ricebowl</li>
+          <li class="tab-btn" onclick="openPage(event, 'Pasalubong')">Pasalubong Corner</li>
+          <li class="tab-btn" onclick="openPage(event, 'Soup')">Soup</li>
+          <li class="tab-btn" onclick="openPage(event, 'Drinks')">Drinks</li>
+          <li class="tab-btn" onclick="openPage(event, 'Extra')">Extra</li>
+       </ul> 
+      </div>  
+    </div>
+
+    <!------------------ This is the tabcontent for all categories of menu ------------------>
+    <div id="Menu" class="tabcontent">
+      <div class="heading">
+        <h1>Menu</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/inasal.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Inasal Ala Bacolod</h4>
+                  <a class="tablink" onclick="openPage(event, 'Inasal')" id="sm-btn"
+                  target="_blank">SEE MORE</a></h4>
+                </div>
+
+                </div>
+              </div>
+            
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/binalot.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Binalot</h4>
+                </div>
+                  <a class="tablink" onclick="openPage(event, 'Binalot')" id="sm-btn"
+                  target="_blank">SEE MORE</a></h4>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/ricebowl.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Ricebowl</h4>
+                </div>
+
+                <a class="tablink" onclick="openPage(event, 'Ricebowl')" id="sm-btn"
+                  target="_blank">SEE MORE</a></h4>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/KANGKONG CHIPS 2.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pasalubong Corner</h4>
+                </div>
+
+                <a class="tablink" onclick="openPage(event, 'Pasalubong')" id="sm-btn"
+                  target="_blank">SEE MORE</a></h4>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 5th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/pataBulalo.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Soup</h4>
+                </div>
+
+                <a class="tablink" onclick="openPage(event, 'Soup')" id="sm-btn"
+                  target="_blank">SEE MORE</a></h4>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 6th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/pepsi.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Drinks</h4>
+                </div>
+
+                <a class="tablink" onclick="openPage(event, 'Drinks')" id="sm-btn"
+                  target="_blank">SEE MORE</a></h4>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 7th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/PLAIN RICE.png" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Extras</h4>
+                </div>
+
+                <a class="tablink" onclick="openPage(event, 'Extra')" id="sm-btn"
+                target="_blank">SEE MORE</a></h4>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!------------------ This is the tabcontent for Inasal Ala Bacolod ------------------>
+     <div class="tabcontent" id="Inasal">
+      <div class="heading">
+        <h1>Inasal Ala Bacolod</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/PECHO.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pecho</h4>
+                  <h4 class="price">₱119.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pecho</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Garlic, lemon grass, ginger, salt and pepper, native vinegar, calamansi or lemon, anato basting
+                      with special anato chicken oil. Served with white rice or java rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/HITA.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Hita</h4>
+                  <h5 class="price">₱109.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Hita</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Garlic, lemon grass, ginger, salt and pepper, native vinegar, calamansi or lemon, anato basting
+                      with special anato chicken oil. Served with white rice or java rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/LIEMPO.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Grilled Liempo</h4>
+                  <h5 class="price">₱119.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Grilled Liempo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Marinated with banana ketchup, soy sauce, calamansi, tamarind sauce, oyster sauce, served with
+                      java or white rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/PINAPUTOK NA TILAPYA.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pinaputok na Tilapya</h4>
+                  <h5 class="price">₱119.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pinaputok na Tilapya</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Garlic, lemon grass, ginger, salt and pepper, native vinegar, calamansi or lemon, anato basting
+                      with special anato chicken oil. Served with white rice or java rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html " class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 5th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/TUNA PANGA.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Tuna Panga Medium</h4>
+                  <h5 class="price">₱175.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Tuna Panga Medium</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Marinated in salt and pepper, sugar, garlic, lemon grass, calamansi. Served with white rice or
+                      java rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 6th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/TUNA PANGA.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Tuna Panga Large</h4>
+                  <h5 class="price">₱185.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Tuna Panga Large</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>- Marinated in salt and pepper, sugar, garlic, lemon grass, calamansi. Served with white rice or
+                      java rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Binalot ------------------>
+    <div id="Binalot" class="tabcontent">
+      <div class="heading">
+        <h1>Binalot</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/PASTIL SPECIAL.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pastil Special</h4>
+                  <h4 class="price">₱89.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pastil Special</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Shreaded chicken breast, salted egg or boiled egg, grilled tomato, 12 herb and spices, wrapped
+                      with native banana leaves.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/Beef Caldereta.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Beef Caldereta</h4>
+                  <h5 class="price">₱119.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Beef Caldereta</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p> Beef loin, tomato, potato, carrots, peanuts butter, liver, herbs and spices, boiled egg cream
+                      and
+                      cheese optional wrapped with native banana leaves. Served with rice, boiled egg or salted egg.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/Bistek Tagalog.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Bistek Tagalog</h4>
+                  <h5 class="price">₱119.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Bistek Tagalog</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Beef loin, onion, calamansi herbs and spices boiled egg wrapped with banana native leaf.
+                      Served with rice, boiled egg or salted egg.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/Binagoongan.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pork Binangoonan</h4>
+                  <h5 class="price">₱109.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pork Binangoonan</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Special shrimp paste or bagoong, grilled tomato, eggplant, egg wrapped with native banana leaves.
+                      Served with rice, boiled egg or salted egg.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Ricebowl ------------------>
+    <div id="Ricebowl" class="tabcontent">
+      <div class="heading">
+        <h1>Rice Bowl</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/TAPA.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Beef Tapa
+                    <h4 class="price">₱98.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Beef Tapa</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Shreaded chicken breast, salted egg or plain egg, grilled tomato, 12 herb and spices, wrapped
+                      with native banana leaves.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/Tortang-Talong.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Longtang Torts</h4>
+                  <h5 class="price">₱80.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Longtang Torts</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Longtang torts or tortang talong, grilled eggplant, egg, onion, ground pork, tomato. Served
+                      with rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/LONGANISA.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Calumpit Longanisa</h4>
+                  <h5 class="price">₱98.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Calumpit Longanisa</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Ground pork, garlic, vinegar, herbs and spices to enhance taste. Served with rice and egg.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/fried_liempo.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Fried Liempo</h4>
+                  <h5 class="price">₱98.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Fried Liempo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Pork liempo, breading mix with Garlic powder, onion powder, flour, cumin powder,
+                      salt and pepper to taste. Served with rice.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/SISIG 2.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Sisig Rembo</h4>
+                  <h5 class="price">₱98.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Sisig Rembo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Fried pork mask, onion, chili, calamansi, salt and pepper, pork brain and chili. Served with rice
+                      and egg.
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Pasalubong Corner ------------------>
+    <div id="Pasalubong" class="tabcontent">
+      <div class="heading">
+        <h1>Pasalubong Corner</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/KANGKONG CHIPS 1.png" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Kangkong Chips</h4>
+                  <h4 class="price">₱110.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Kangkong Chips</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Kang Kong leaves, cornstarch, flour, salt and papper, flavored powder
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/INUTAK.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Inutak</h4>
+                  <h5 class="price">₱65.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Inutak</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Flour, rice glutunous, rice flour, coconut milk, sugar, ube jam
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/MUSHROOM CHICHARON.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Mushroom Chicharon</h4>
+                  <h5 class="price">₱100.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Mushroom Chicharon</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/CHILI GARLIC 2.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Chili Garlic Oil</h4>
+                  <h5 class="price">₱130.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Chili Garlic Oil</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>Vegetable oil, red chili, salt, vinegar, garlic
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Soup ------------------>
+    <div id="Soup" class="tabcontent">
+      <div class="heading">
+        <h1>Soup</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/lomo.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name"> Bulalo Lomo</h4>
+                  <h4 class="price">₱149.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Bulalo Lomo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/pataBulalo.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pata ala Bulalo</h4>
+                  <h5 class="price">₱169.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pata Ala Bulalo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Drinks ------------------>
+    <div id="Drinks" class="tabcontent">
+      <div class="heading">
+        <h1>Drinks</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/zesto.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Zesto Mango</h4>
+                  <h4 class="price">₱15.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Zesto Mango</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/mt-dew.jpeg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Mountain Dew</h4>
+                  <h5 class="price">₱25.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Mountain Dew</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/pepsi.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pepsi</h4>
+                  <h5 class="price">₱25.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pepsi</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/7up.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">7Up</h4>
+                  <h5 class="price">₱25.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>7Up</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Soup ------------------>
+    <div id="Soup" class="tabcontent">
+      <div class="heading">
+        <h1>Soup</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/lomo.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name"> Bulalo Lomo</h4>
+                  <h4 class="price">₱149.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Bulalo Lomo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/pataBulalo.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Pata ala Bulalo</h4>
+                  <h5 class="price">₱169.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Pata Ala Bulalo</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ This is the tabcontent for Extras ------------------>
+    <div id="Extra" class="tabcontent">
+      <div class="heading">
+        <h1>Extra</h1>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <!-- First card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/PLAIN RICE.png" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Plain Rice</h4>
+                  <h4 class="price">₱15.00</h4>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Plain Rice</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 2nd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/JAVARICE.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Java Rice</h4>
+                  <h5 class="price">₱20.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Java Rice</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 3rd Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/FRIED RICE.png" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Fried Rice</h4>
+                  <h5 class="price">₱20.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Fried Rice</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/Tortang-Talong.jpg" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">LongTang Torts (Solo)</h4>
+                  <h5 class="price">₱65.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>LongTarts (Solo)</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn" 
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <!-- 4th Card -->
+              <div class="front-content">
+                <div class="items"></div>
+                <div class="img-product">
+                  <img src="images/PASTIL 1.png" alt="">
+                </div>
+
+                <div class="details">
+                  <h4 class="name">Chicken Pastil</h4>
+                  <h5 class="price">₱25.00</h5>
+                </div>
+
+                <div class="overlay">
+                  <div class="items">
+
+                  </div>
+                  <div class="items head">
+                    <p>Chicken Pastil</p>
+                    <hr>
+                  </div>
+                  <div class="items description">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="items cart">
+                    <a href="order__form.html" class="btn"
+                      target="_blank">ORDER</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <p>Email: Binasal2022@gmail.com</p>
+            <p>Phone: 09559664088/09150357459</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <!-- <a href="#" class="social-icon" id="map"><i class="bx bxs-map"></i></a> -->
+              <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.facebook.com/Binasal2022" class="social-icon"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="main.js"></script>
+
+  
+  <script>
+    function openPage(evt, pageName) {
+      var i, tabcontent, tab;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab-btn");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+    // Get the element with id="defaultOpen" and click on it
+    // document.getElementById("defaultOpen").click();
+    // document.getElementById("PSC").click();
+  </script>
+</body>
+
+</html>
